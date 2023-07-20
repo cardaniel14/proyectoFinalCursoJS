@@ -11,8 +11,36 @@ nav{
     height: 75px;
 }
 
-nav ul{
+.navmenu{
     display: flex;
+    justify-content: flex-end;
+    margin-right: 50px;  
+    padding-top: 20px;      
+}
+
+.navmenu ul{
+    display: flex;
+    justify-content: space-around;
+    width: 20%;
+    height: 30px;
+    align-items: center;    
+}
+
+.navmenu ul li{    
+    background-color: #E6DDC4;
+    list-style: none;
+    font-family: Arial, Helvetica, sans-serif;
+    align-items: center;
+    padding: 8px;
+    border-radius: 10px;
+    color:#181D31;
+    box-shadow: 2px 2px 0px #678983;
+    cursor: pointer;
+}
+
+.navmenu ul li:active{
+    transform: scale(0.95);  
+    box-shadow: none;
 }
 
 /* header */
@@ -51,22 +79,17 @@ main{
     margin-top: 150px;
 }
 
-.card1{
+.card1,.card2{
     border: 5px solid;
     border-color: #678983;
     background-color:  #E6DDC4;
     width: 320px;
-    height: 350px;
-    margin-left: 250px;
-    margin-right: 250px;
+    height: 350px;    
 }
 
-.card2{
-    border: 5px solid;
-    border-color: #678983;
-    background-color:  #E6DDC4;
-    width: 320px;
-    height: 350px;
+.card1{
+    margin-left: 250px;
+    margin-right: 250px;    
 }
 
 .maincard img{
@@ -170,3 +193,98 @@ footer p{
     text-align: center;
     padding-top: 10px;
 }
+
+.para1,.para2,.para3{
+    display: flex;
+    /* border: solid; */
+
+}
+
+.parrafos{
+    color: #E6DDC4;
+    font-size: 16px;
+}
+
+.para1{
+    margin-top: 180px;
+    height: 250px;
+    margin-right: 40PX;
+}
+
+.para1 p{
+    width: 600px;
+}
+
+.para1 h2{
+    font-size: 38px;
+}
+
+.para2{
+    padding-left: 120px;
+    margin-bottom: 100px;
+}
+
+.para2 p{
+    width: 610px;
+    height: 200px;
+}
+
+.para2 h2{
+    padding-top: 50px;
+    padding-left: 80px;
+}
+
+.para3 h2{
+    padding-left: 65px;
+    padding-top: 50px;
+    padding-right: 15px;
+}
+
+.para3 p{
+    margin-right: 30px;
+    padding-bottom: 50px;
+    font-size: 15px;
+    
+}
+
+.para3{
+    padding: 10px;
+}
+
+video{
+    margin-left: 250px;
+    width: 900px;
+    border-radius: 2%;
+    margin-top: 20px;
+}
+
+.botones{
+    border: thick solid #678983;
+    background-color: #678983;
+    width: 900px;
+    margin-left: 250px;
+    border-radius: 20px;
+    display: flex;
+}
+
+.fa-play,.fa-pause{
+    cursor: pointer;
+    padding: 10px;
+}
+
+.fa-play:active,.fa-pause:active{
+    transform: scale(0.95); 
+    
+}
+
+#current{
+    margin-left: 700px;
+    font-weight: bolder;    
+    
+}
+
+#duracionVideo{
+    font-weight: bolder;
+
+}
+
