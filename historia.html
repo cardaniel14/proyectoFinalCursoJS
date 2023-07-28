@@ -15,8 +15,8 @@
         </div>
         <div class="navmenu">
             <ul>
-                <li>HISTORIA</li>
-                <li>JUGUEMOS</li>
+                <li onclick="btnHistoria()">HISTORIA</li>
+                <li onclick="btnJuego()">JUGUEMOS</li>
             </ul>    
         </div>
     </nav>
@@ -79,8 +79,8 @@
             <source src="./video/historia-Comp.ogv" type="video/ogv">
         </video>
         <div class="botones">
-            <i class="fa-solid fa-play fa-2xl" style="color: #181d31;"></i>
-            <i class="fa-solid fa-pause fa-2xl" style="color: #181d31;"></i>
+            <i onclick="play()" class="fa-solid fa-play fa-2xl" style="color: #181d31;"></i>
+            <i onclick="pause()" class="fa-solid fa-pause fa-2xl" style="color: #181d31;"></i>
             <p id="current">00:00</p>
             <p id="duracionVideo"></p>
                         

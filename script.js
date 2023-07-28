@@ -1,14 +1,17 @@
-let btnHistoria = document.querySelector(".boton");
-let btnJuego = document.querySelector(".btnjuego");
-let duracion = document.getElementById("duracionVideo");
-let current = document.getElementById("current");
-let video = document.querySelector("video");
+const duracion = document.getElementById("duracionVideo");
+const current = document.getElementById("current");
+const video = document.querySelector("video");
 let repro;
-let play = document.querySelector(".fa-play");
-let pause = document.querySelector(".fa-pause");
 
-video.onloadedmetadata = function() {
-    
+function btnHistoria() {
+    window.location.href= "historia.html";
+}
+
+function btnJuego(){
+    window.location.href = "juego.html";
+}
+
+video.onloadedmetadata = function() {    
     let minutos = parseInt(this.duration/60);
     let segundos= parseInt(this.duration%60);
     if(minutos===10){
@@ -18,19 +21,7 @@ video.onloadedmetadata = function() {
     }
   };
 
-
-let historiaLi = document.querySelectorAll("li")[0];
-let juguemosLi = document.querySelectorAll("li")[1];
-
-historiaLi.addEventListener("click", ()=>{
-    window.location.href= "historia.html";
-});
-
-juguemosLi.addEventListener("click", ()=>{
-    window.location.href = "juego.html";
-});
-
-play.addEventListener("click",()=>{
+function play() {
     video.play();
     repro = setInterval(()=>{
         let currentMinutes = Math.floor(video.currentTime/60);
@@ -45,19 +36,11 @@ play.addEventListener("click",()=>{
             }
        },1000);
 
-});
-
-pause.addEventListener("click",()=>{
-    video.pause();    
-});
-
-function botonIndex(){
-    btnHistoria.addEventListener("click", ()=>{
-        window.location.href= "historia.html";
-});
-
-btnJuego.addEventListener("click", ()=>{
-    window.location.href = "juego.html";
-});
 };
-botonIndex();
+
+function pause() {
+    video.pause();    
+};
+
+
+

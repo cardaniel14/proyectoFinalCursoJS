@@ -1,11 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="icon" href="./imagenes/logo.png" type="image/x-icon">
+    <link href="style.css" rel="stylesheet">
+    <title>Proyecto-Final</title>
 </head>
+
 <body>
-    <h1>juego</h1>
+    <nav>
+        <div class="animacion">
+
+        </div>
+        <div class="navmenu">
+            <ul>
+                <li onclick="btnHistoria()">HISTORIA</li>
+                <li onclick="btnJuego()">JUGUEMOS</li>
+            </ul>
+        </div>
+    </nav>
+    <header>
+        <div class="encabezado">
+            <div class="titulo">
+                <h1>JUGUEMOS UN POCO</h1>
+            </div>
+        </div>
+    </header>
+    <main>
+        <h2>Armemos el rompecabezas y veamos que imagen es...</h2>
+        <div class="divjuego">
+            <div class="div1game" id="0" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <p class="p">Arrastra y suelta la imagen aqui</p>
+            </div>
+            <div class="div2game" id="1" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <p class="p" id="dani">Arrastra y suelta la imagen aqui</p>
+            </div>
+            <div class="div3game" id="2" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <p class="p">Arrastra y suelta la imagen aqui</p>
+            </div>
+        </div>
+        <div class="imagenesJuego">
+            <img src="./imagenes/rompe2.png" alt="imagencomputacion" id="imgJuego1" class="lista" draggable="true" ondragstart="drag(event)">
+            <img src="./imagenes/Rompe1.png" alt="imagencomputacion" id="imgJuego2" class="lista" draggable="true" ondragstart="drag(event)">
+            <img src="./imagenes/Rompe3.png" alt="imagencomputacion" id="imgJuego3" class="lista" draggable="true" ondragstart="drag(event)">
+
+        </div>
+        <p class="restartGame" onclick="reStart()">Reiniciar</p>    
+
+    </main>
+    <footer>
+        <img src="./imagenes/logo.png" alt="logo">
+        <h3>PROGRAMACION E HISTORIA</h3>
+        <p>Sitio con fines educativos para el curso UTN avanzado en HTML, CSS y JS</p>
+    </footer>
+    <script src="juego.js"></script>
 </body>
+
 </html>
