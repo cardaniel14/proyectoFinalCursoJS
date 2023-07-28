@@ -31,24 +31,23 @@
     <main>
         <h2>Armemos el rompecabezas y veamos que imagen es...</h2>
         <div class="divjuego">
-            <div class="div1game" id="0" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <div class="divgame" id="0" ondrop="drop(event)" ondragover="allowDrop(event)">
                 <p class="p">Arrastra y suelta la imagen aqui</p>
             </div>
-            <div class="div2game" id="1" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <div class="divgame" id="1" ondrop="drop(event)" ondragover="allowDrop(event)">
                 <p class="p" id="pJuego">Arrastra y suelta la imagen aqui</p>
             </div>
-            <div class="div3game" id="2" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <div class="divgame" id="2" ondrop="drop(event)" ondragover="allowDrop(event)">
                 <p class="p">Arrastra y suelta la imagen aqui</p>
             </div>
         </div>
         <div class="imagenesJuego">
-            <img src="./imagenes/rompe2.png" alt="imagencomputacion" id="imgJuego1" class="lista" draggable="true" ondragstart="drag(event)">
-            <img src="./imagenes/Rompe1.png" alt="imagencomputacion" id="imgJuego2" class="lista" draggable="true" ondragstart="drag(event)">
-            <img src="./imagenes/Rompe3.png" alt="imagencomputacion" id="imgJuego3" class="lista" draggable="true" ondragstart="drag(event)">
+            <img src="./imagenes/rompe2.png" alt="imagencomputacion" id="imgJuego1" draggable="true" ondragstart="drag(event)">
+            <img src="./imagenes/Rompe1.png" alt="imagencomputacion" id="imgJuego2" draggable="true" ondragstart="drag(event)">
+            <img src="./imagenes/Rompe3.png" alt="imagencomputacion" id="imgJuego3" draggable="true" ondragstart="drag(event)">
 
         </div>
         <p class="restartGame" onclick="reStart()">Reiniciar</p>    
-
     </main>
     <footer>
         <img src="./imagenes/logo.png" alt="logo">

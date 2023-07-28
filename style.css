@@ -293,22 +293,22 @@ video{
     column-gap: 20px;
 }
 
-.div1game,.div2game,.div3game,#imgJuego1,#imgJuego2,#imgJuego3{    
+.divgame,#imgJuego1,#imgJuego2,#imgJuego3{    
     width: 300px;
     height: 400px;
     border-radius: 20px;
 }
 
-.div1game,.div2game,.div3game{
+.divgame{
     background-color: grey;
 }
 
-.div1game:hover,.div2game:hover,.div3game:hover{
+.divgame:hover{
     background-color:darkslategrey;
 }
 
 
-.div1game p,.div2game p,.div3game p{
+.divgame p{
     margin-top: 150px;
     margin-left: 40px;
     color:#E6DDC4
