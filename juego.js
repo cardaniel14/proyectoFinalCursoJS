@@ -1,5 +1,5 @@
 let p = document.getElementsByClassName("p")
-let div2 = document.getElementById("dani")
+let div2 = document.getElementById("pJuego")
 
 function reStart(){
     window.location.href = "juego.html";

@@ -11,15 +11,17 @@ nav{
     height: 75px;
 }
 
-.navmenu{
+.navmenu,.navmenu ul{
     display: flex;
+}
+
+.navmenu{   
     justify-content: flex-end;
     margin-right: 50px;  
     padding-top: 20px;      
 }
 
-.navmenu ul{
-    display: flex;
+.navmenu ul{    
     justify-content: space-around;
     width: 20%;
     height: 30px;
@@ -117,12 +119,12 @@ footer img{
     margin-top: 50px;
 }
 
-footer h3,p{
+footer h3,footer p{
     font-family: Arial, Helvetica, sans-serif;
     color: #181D31;
 }
 
-footer h3{
+footer h3 {
     margin-left: 70px;
     margin-top: 60px;
     font-size: 12px;
@@ -130,8 +132,7 @@ footer h3{
     height: 60px;
     text-align: center;
     vertical-align: middle;
-    line-height: 20px;
-    
+    line-height: 20px;    
 }
 
 footer p{
@@ -139,7 +140,7 @@ footer p{
     margin-top: 60px;
 }
 
-.boton{
+.botonHistoria{
     background-color: #181D31;    
     box-shadow: 2px 2px 0px #678983;
     border-radius: 10px;
@@ -152,18 +153,18 @@ footer p{
     cursor: pointer;
 }
 
-.boton:active{
+.botonHistoria:active{
     transform: scale(0.95); 
     box-shadow: none; 
 }
 
-.boton p{
+.botonHistoria p{
     color: white;
     font-family: Arial, Helvetica, sans-serif;
     text-decoration: none;
 }
 
-.btnjuego{
+.btnJuego{
     background-color: #181D31;    
     box-shadow: 2px 2px 0px #678983;
     border-radius: 10px;
@@ -176,14 +177,12 @@ footer p{
     cursor: pointer;
 }
 
-.btnjuego:active{
+.btnJuego:active{
     transform: scale(0.95);  
     box-shadow: none;
 }
 
-
-
-.btnjuego p{
+.btnJuego p{
     color: white;
     font-family: Arial, Helvetica, sans-serif;
     text-decoration: none;    
@@ -196,8 +195,6 @@ footer p{
 
 .para1,.para2,.para3{
     display: flex;
-    /* border: solid; */
-
 }
 
 .parrafos{
