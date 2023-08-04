@@ -3,6 +3,23 @@ const current = document.getElementById("current");
 const video = document.querySelector("video");
 let repro;
 
+document.addEventListener("DOMContentLoaded", function() {
+    setTimeout(function() {
+        const svg1 = document.querySelector(".svg1");
+        
+      svg1.style.display = "block";
+    }, 2000); 
+  });
+
+document.addEventListener("DOMContentLoaded", function() {
+    setTimeout(function() {
+        const svg2 = document.querySelector(".svg2");
+        
+      svg2.style.display = "block";
+    }, 4000); 
+  });
+
+
 function btnHistoria() {
     window.location.href= "historia.html";
 }
@@ -19,7 +36,8 @@ video.onloadedmetadata = function() {
     } else {
         duracion.innerText=`/0${minutos}:${segundos}`
     }
-  };
+  }
+
 
 function play() {
     video.play();
@@ -41,6 +59,7 @@ function play() {
 function pause() {
     video.pause();    
 };
+
 
 
 

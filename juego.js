@@ -27,3 +27,19 @@ function drop(event) {
     
     draggedElement.draggable=false;
 }
+
+document.addEventListener("DOMContentLoaded", function() {
+  setTimeout(function() {
+      const svg1 = document.querySelector(".svg1");
+      
+    svg1.style.display = "block";
+  }, 2000); 
+});
+
+document.addEventListener("DOMContentLoaded", function() {
+  setTimeout(function() {
+      const svg2 = document.querySelector(".svg2");
+      
+    svg2.style.display = "block";
+  }, 4000); 
+});
