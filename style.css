@@ -1,82 +1,85 @@
 * {
     margin: 0;
     padding: 0;
-  }
+}
 
-body{
+body {
     background-color: #181D31;
-}  
+}
 
-nav{
+nav {
     height: 75px;
     display: flex;
 }
 
-svg{
+svg {
     animation: aparecer 2s ease forwards;
 }
 
 @keyframes aparecer {
-  0% {
-    transform: translateY(-100%);
-  }
-  100% {
-    transform: translateY(0); 
-  }
+    0% {
+        transform: translateY(-100%);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
 }
 
-#current,#duracionVideo,.p{
+#current,
+#duracionVideo,
+.p {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.animacion{
+.animacion {
     margin-left: 70px;
     margin-top: 5px;
-    position: relative;    
+    position: relative;
 }
 
-.navmenu{   
+.navmenu {
     margin-left: 1000px;
     display: flex;
     padding-top: 20px;
 }
 
-.navmenu ul{    
+.navmenu ul {
     height: 30px;
-    align-items: center;    
+    align-items: center;
     gap: 30px;
     display: flex;
 }
 
-.navmenu ul li{    
+.navmenu ul li {
     background-color: #E6DDC4;
     list-style: none;
     font-family: Arial, Helvetica, sans-serif;
     padding: 8px;
     border-radius: 10px;
-    color:#181D31;
+    color: #181D31;
     box-shadow: 2px 2px 0px #678983;
     cursor: pointer;
     justify-content: flex-end;
 }
 
-.navmenu ul li:active{
-    transform: scale(0.95);  
+.navmenu ul li:active {
+    transform: scale(0.95);
     box-shadow: none;
 }
 
 /* header */
-header h1{
+header h1 {
     color: #EEEEEE;
-    text-shadow: 2px 2px 0px  grey, 6px 6px 0px black;   
+    text-shadow: 2px 2px 0px grey, 6px 6px 0px black;
     font-size: 50px;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-main{
+main {
     margin-bottom: 200px;
 }
- 
+
 .encabezado {
     position: relative;
     text-align: center;
@@ -101,26 +104,27 @@ main{
     margin-top: 150px;
 }
 
-.card1,.card2{
+.card1,
+.card2 {
     border: 5px solid;
     border-color: #678983;
-    background-color:  #E6DDC4;
+    background-color: #E6DDC4;
     width: 320px;
-    height: 350px;    
+    height: 350px;
 }
 
-.card1{
+.card1 {
     margin-left: 250px;
-    margin-right: 250px;    
+    margin-right: 250px;
 }
 
-.maincard img{
+.maincard img {
     width: 320px;
 }
 
-h2{
+h2 {
     text-align: center;
-    color:  #678983;
+    color: #678983;
     font-family: Arial, Helvetica, sans-serif;
     text-shadow: 2px 2px 0px black;
     font-size: 40px;
@@ -128,20 +132,21 @@ h2{
 
 /* FOOTER */
 
-footer{
+footer {
     background-color: #678983;
     display: flex;
     height: 150px;
 }
 
-footer img{
+footer img {
     width: 100px;
     height: 75px;
     margin-left: 30px;
     margin-top: 50px;
 }
 
-footer h3,footer p{
+footer h3,
+footer p {
     font-family: Arial, Helvetica, sans-serif;
     color: #181D31;
 }
@@ -154,132 +159,134 @@ footer h3 {
     height: 60px;
     text-align: center;
     vertical-align: middle;
-    line-height: 20px;    
+    line-height: 20px;
 }
 
-footer p{
+footer p {
     margin-left: 500px;
     margin-top: 60px;
 }
 
-.botonHistoria{
-    background-color: #181D31;    
+.botonHistoria {
+    background-color: #181D31;
     box-shadow: 2px 2px 0px #678983;
     border-radius: 10px;
     width: 120px;
     text-align: center;
-    margin-top: 40px;    
+    margin-top: 40px;
     margin-left: 90px;
     height: 20px;
     padding: 10px 10px;
     cursor: pointer;
 }
 
-.botonHistoria:active{
-    transform: scale(0.95); 
-    box-shadow: none; 
+.botonHistoria:active {
+    transform: scale(0.95);
+    box-shadow: none;
 }
 
-.botonHistoria p{
+.botonHistoria p {
     color: white;
     font-family: Arial, Helvetica, sans-serif;
     text-decoration: none;
 }
 
-.btnJuego{
-    background-color: #181D31;    
+.btnJuego {
+    background-color: #181D31;
     box-shadow: 2px 2px 0px #678983;
     border-radius: 10px;
     width: 120px;
     text-align: center;
-    margin-top: 80px;    
+    margin-top: 80px;
     margin-left: 90px;
     height: 20px;
     padding: 10px 10px;
     cursor: pointer;
 }
 
-.btnJuego:active{
-    transform: scale(0.95);  
+.btnJuego:active {
+    transform: scale(0.95);
     box-shadow: none;
 }
 
-.btnJuego p{
+.btnJuego p {
     color: white;
     font-family: Arial, Helvetica, sans-serif;
-    text-decoration: none;    
+    text-decoration: none;
 }
 
-.pbtn{
+.pbtn {
     text-align: center;
     padding-top: 10px;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.para1,.para2,.para3{
+.para1,
+.para2,
+.para3 {
     display: flex;
 }
 
-.parrafos{
+.parrafos {
     color: #E6DDC4;
     font-size: 16px;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.para1{
+.para1 {
     margin-top: 180px;
     height: 250px;
     margin-right: 40PX;
 }
 
-.para1 p{
+.para1 p {
     width: 600px;
 }
 
-.para1 h2{
+.para1 h2 {
     font-size: 38px;
 }
 
-.para2{
+.para2 {
     padding-left: 120px;
     margin-bottom: 100px;
 }
 
-.para2 p{
+.para2 p {
     width: 610px;
     height: 200px;
 }
 
-.para2 h2{
+.para2 h2 {
     padding-top: 50px;
     padding-left: 80px;
 }
 
-.para3 h2{
+.para3 h2 {
     padding-left: 65px;
     padding-top: 50px;
     padding-right: 15px;
 }
 
-.para3 p{
+.para3 p {
     margin-right: 30px;
     padding-bottom: 50px;
     font-size: 15px;
-    
+
 }
 
-.para3{
+.para3 {
     padding: 10px;
 }
 
-video{
+video {
     margin-left: 250px;
     width: 900px;
     border-radius: 2%;
     margin-top: 20px;
 }
 
-.botones{
+.botones {
     border: thick solid #678983;
     background-color: #678983;
     width: 900px;
@@ -288,28 +295,31 @@ video{
     display: flex;
 }
 
-.fa-play,.fa-pause{
+.fa-play,
+.fa-pause {
     cursor: pointer;
     padding: 10px;
 }
 
-.fa-play:active,.fa-pause:active{
-    transform: scale(0.95); 
-    
+.fa-play:active,
+.fa-pause:active {
+    transform: scale(0.95);
+
 }
 
-#current{
+#current {
     margin-left: 700px;
-    font-weight: bolder;    
-    
-}
-
-#duracionVideo{
     font-weight: bolder;
 
 }
 
-.divjuego,.imagenesJuego{
+#duracionVideo {
+    font-weight: bolder;
+
+}
+
+.divjuego,
+.imagenesJuego {
     display: grid;
     grid-template-columns: 300px 300px 2px;
     margin-top: 50px;
@@ -317,33 +327,36 @@ video{
     column-gap: 20px;
 }
 
-.divgame,#imgJuego1,#imgJuego2,#imgJuego3{    
+.divgame,
+#imgJuego1,
+#imgJuego2,
+#imgJuego3 {
     width: 300px;
     height: 400px;
     border-radius: 20px;
 }
 
-.divgame{
+.divgame {
     background-color: grey;
 }
 
-.divgame:hover{
-    background-color:darkslategrey;
+.divgame:hover {
+    background-color: darkslategrey;
 }
 
 
-.divgame p{
+.divgame p {
     margin-top: 150px;
     margin-left: 40px;
-    color:#E6DDC4
+    color: #E6DDC4
 }
 
-.restartGame{
+.restartGame {
     background-color: #E6DDC4;
     font-family: Arial, Helvetica, sans-serif;
     padding: 8px;
     border-radius: 10px;
-    color:#181D31;
+    color: #181D31;
     box-shadow: 2px 2px 0px #678983;
     cursor: pointer;
     width: 200px;
@@ -352,10 +365,8 @@ video{
     padding-left: 40px;
 }
 
-#imgJuego1,#imgJuego2,#imgJuego3{
+#imgJuego1,
+#imgJuego2,
+#imgJuego3 {
     cursor: move;
 }
-
-
-
-
